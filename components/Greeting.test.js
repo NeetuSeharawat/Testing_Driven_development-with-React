@@ -42,7 +42,7 @@ describe('Greeting component', () => {
      // Act
      const buttonElement = screen.getByRole('button');
      userEvent.click(buttonElement)
-
+ 
      // Assert
      const outputElement = screen.queryByText('good to see you', { exact: false });
      expect(outputElement).toBeNull();
